@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&family=Poppins:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    90deg,
+    hsla(46, 100%, 50%, 0.686),
+    hsl(37, 93%, 48%)
+  );
+  overflow: hidden;
+}
+.navigation {
+  position: absolute;
+  top: 0%;
+  left: 45%;
+  display: flex;
+  gap: 50px;
+}
+
+.main-statement {
+  background: -webkit-linear-gradient(#4884ee, #06bcfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Fascinate;
+  margin: 30px;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-container {
+  position: relative;
+  width: 170px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  overflow: hidden;
+  font-family: "Fascinate", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+.button-container button {
+  width: 101%;
+  height: 100%;
+  font-family: "Fascinate", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 1px;
+  background: transparent;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #06bcfb;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+}
+.button-container button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+}
+
+.mas {
+  color: hsla(0, 0%, 0%, 0.722);
+  text-align: center;
+  width: 101%;
+  font-family: "Fascinate", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  top: 10%;
+  font-size: 30px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
